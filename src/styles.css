@@ -2,20 +2,53 @@ body {
   margin: 20px auto;
 }
 
+div {
+display: block;
+}
+
 div.container {
-  margin: 10px auto;
+  max-width: 720px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   border: 3px solid #0f4c75;
   border-radius: 50px;
   padding: 20px;
   background-color: #f0f5f9;
   box-shadow: 3px 3px 3px #52616b;
-  max-width: 35%;
+}
+
+div.detailed {
+  margin: 5px auto;
+  padding: 20px;
+  font-size: 15px;
+}
+div.icon {
+  font-size: 25px;
+}
+div.five-day-forecast {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 720px;
+  text-align: left;
+  background-color: #c9d6df;
+  border: 3px transparent #3282b8;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 1px 1px 1px #52616b;
+  line-height: 2;
+  font-family: "Inconsolata", monospace;
 }
 
 h1,
 h2 {
   padding: 0 5px;
-  text-align: center;
+  text-align: left;
   line-height: 35px;
   margin: 5px auto;
   display: block;
@@ -31,6 +64,7 @@ h1 {
 li {
   list-style: none;
 }
+
 li.current-forecast {
   font-weight: 600;
   font-size: 25px;
@@ -40,12 +74,13 @@ li.current-date {
   font-weight: 450;
   font-size: 18px;
 }
+
 p {
   font-family: "Inconsolata", monospace;
 }
 
 p.high-low {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   font-weight: 500;
 }
@@ -56,7 +91,7 @@ p.high-low,
 }
 
 p.feels-like {
-  text-align: center;
+  text-align: left;
   color: #3282b8;
   font-size: 20px;
   font-weight: 500;
@@ -68,30 +103,11 @@ i.current-icon {
   text-align: center;
   line-height: 35px;
 }
-div.detailed {
-  margin: 5px auto;
-  padding: 20px;
-  font-size: 15px;
-}
-div.icon {
-  font-size: 25px;
-}
-div.five-day-forecast {
-  display: block;
-  text-align: centre;
-  background-color: #c9d6df;
-  border: 3px transparent #3282b8;
-  border-radius: 30px;
-  padding: 40px;
-  box-shadow: 1px 1px 1px #52616b;
-  line-height: 2;
-  font-family: "Inconsolata", monospace;
-}
 
 i.fa-cloud {
   color: #52575d;
 }
-.fa-sun {
+i.fa-sun {
   color: #ffd460;
 }
 i.fa-cloud-sun {
@@ -100,8 +116,9 @@ i.fa-cloud-sun {
 i.fa-cloud-sun-rain {
   color: #726a95;
 }
+
 form.search-form {
-  text-align: center;
+  text-align: left;
 }
 .day {
   font-weight: bolder;
@@ -110,5 +127,5 @@ form.search-form {
   font-weight: bolder;
 }
 .weather-detailed {
-  text-align: right;
+  text-align: left;
 }
