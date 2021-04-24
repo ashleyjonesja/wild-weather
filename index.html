@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Wizz</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+<script
+src="https://kit.fontawesome.com/d246e28b83.js"
+crossorigin="anonymous"
+></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link href="src/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          class="form-control mb-2 mr-sm-2"
+          id="search-city"
+          placeholder="Enter city name"
+        />
+        <button type="submit" class="btn btn-secondary mb-2" id = "btn-search">Search</button>
+        <button type="submit" class="btn btn-secondary mb-2" id = "btn-current">Current</button>
+      
+      </form>
+      <br />
+        <h1 class="current-city" id="current-city"></h1>
+        <ul>
+          <li class ="current-date" id="date"></li>
+          <li class="current-forecast" id="current-description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="summary-weather">
+              <i class="fas fa-cloud-sun current-icon float-left"></i>
+              <div class="float-left">
+                <span class="current-temperature" id="temperature"></span>
+                <span class="units">
+            <a href="#" id="celsius">°C</a>
+            <a href="#" id="fahrenheit">°F</a>
+          </span>
+              </div>
+            </div>
+            </div>
+            <div class="col-6">
+              <ul>
+              <li class="detailed humidity">
+                <strong>Humidity </strong><span id = "current-humidity"></span>%
+              </li>
+              <li class="detailed wind">
+                <strong>Wind </strong> <span id="current-wind"></span> km/h
+              </li>
+              </ul>
+            </div>
+
+      <br />
+      <div class="five-day-forecast">
+        <div class="row day-one">
+          <div class="col-4 day">Sunday</div>
+          <div class="col-4 icon"><i class="fas fa-cloud"></i></div>
+          <div class="col-2 high">11°</div>
+          <div class="col-2 low">8°</div>
+        </div>
+        <div class="row day-two">
+          <div class="col-4 day">Monday</div>
+          <div class="col-4 icon">
+            <i class="fas fa-sun"></i>
+          </div>
+          <div class="col-2 high">13°</div>
+          <div class="col-2 low">9°</div>
+        </div>
+        <div class="row day-three">
+          <div class="col-4 day">Tuesday</div>
+          <div class="col-4 icon"><i class="fas fa-cloud-sun"></i></div>
+          <div class="col-2 high">11°</div>
+          <div class="col-2 low">9°</div>
+        </div>
+        <div class="row day-four">
+          <div class="col-4 day">Wednesday</div>
+          <div class="col-4 icon"><i class="fas fa-cloud-sun"></i></div>
+          <div class="col-2 high">13°</div>
+          <div class="col-2 low">10°</div>
+        </div>
+        <div class="row day-five">
+          <div class="col-4 day">Thursday</div>
+          <div class="col-4 icon"><i class="fas fa-cloud-sun-rain"></i></div>
+          <div class="col-2 high">12°</div>
+          <div class="col-2 low">10°</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
