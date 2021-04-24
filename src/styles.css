@@ -60,7 +60,7 @@ h1,
 h2 {
   padding: 0 5px;
   text-align: left;
-  line-height: 35px;
+  line-height: 55px;
   margin: 5px auto;
   display: block;
   font-family: "Karla", sans-serif;
@@ -68,8 +68,8 @@ h2 {
 h1 {
   color: #0f4c75;
   font-weight: 900;
-  font-size: 34px;
-  line-height: 35px;
+  font-size: 50px;
+  line-height: 55px;
 }
 
 li {
@@ -77,13 +77,13 @@ li {
 }
 
 li.current-forecast {
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 35px;
 }
 
 li.current-date {
-  font-weight: 450;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 p {
