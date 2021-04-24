@@ -52,6 +52,7 @@ span.current-temperature {
 }
 
 span.units {
+  position: relative;
   font-size: 20px;
 }
 
