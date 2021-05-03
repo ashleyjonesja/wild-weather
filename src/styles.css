@@ -1,66 +1,98 @@
 body {
-  margin: 20px auto;
+  background: #f9f7fe;
+  display: block;
+  text-align: left;
 }
 
-div.container {
-  margin: 10px auto;
-  border: 3px solid #0f4c75;
-  border-radius: 50px;
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  border-radius: 5px;
   padding: 20px;
   background-color: #f0f5f9;
   box-shadow: 3px 3px 3px #52616b;
-  max-width: 35%;
 }
 
-h1,
-h2 {
-  padding: 0 5px;
-  text-align: center;
-  line-height: 35px;
-  margin: 5px auto;
-  display: block;
-  font-family: "Karla", sans-serif;
+.weather {
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  color: #878787;
 }
+
 h1 {
   color: #0f4c75;
-  font-weight: 900;
-  font-size: 34px;
-  line-height: 35px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 40px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+form.search-city {
+  background: #f9f7fe;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+}
+
+.weather footer {
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  margin-top: 40px;
+  padding: 0 5px;
+  line-height: 18px;
+  text-align: center;
+  color: #52616b;
 }
 
 li {
+  font-family: "Inconsolata", monospace;
   list-style: none;
-}
-li.current-forecast {
-  font-weight: 600;
-  font-size: 25px;
+  margin: 0;
+  line-height: 27px;
+  padding: 0;
 }
 
 li.current-date {
   font-weight: 450;
   font-size: 18px;
-}
-p {
-  font-family: "Inconsolata", monospace;
+  line-height: 25px;
 }
 
-p.high-low {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-p.high-low,
-.current-forecast .current-temperature {
+li.current-forecast {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
   color: #0f4c75;
+  padding-top: 10px;
+  line-height: 27px;
 }
 
-p.feels-like {
-  text-align: center;
+li.detailed {
   color: #3282b8;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 0;
+  line-height: 20px;
 }
+
 i.current-icon {
   display: block;
   font-size: 45px;
@@ -68,11 +100,17 @@ i.current-icon {
   text-align: center;
   line-height: 35px;
 }
+
+div {
+  display: block;
+}
+
 div.detailed {
   margin: 5px auto;
   padding: 20px;
   font-size: 15px;
 }
+
 div.icon {
   font-size: 25px;
 }
@@ -99,9 +137,6 @@ i.fa-cloud-sun {
 }
 i.fa-cloud-sun-rain {
   color: #726a95;
-}
-form.search-form {
-  text-align: center;
 }
 .day {
   font-weight: bolder;
