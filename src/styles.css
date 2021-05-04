@@ -129,7 +129,7 @@ div.five-day-forecast {
 i.fa-cloud {
   color: #52575d;
 }
-.fa-sun {
+i.fa-sun {
   color: #ffd460;
 }
 i.fa-cloud-sun {
@@ -145,5 +145,5 @@ i.fa-cloud-sun-rain {
   font-weight: bolder;
 }
 .weather-detailed {
-  text-align: right;
+  text-align: left;
 }
