@@ -1,5 +1,5 @@
 body {
-  background: #f9f7fe;
+  background: #f0f5f9;
   display: block;
   text-align: left;
 }
@@ -14,20 +14,19 @@ body {
   font-weight: 400;
   border-radius: 5px;
   padding: 20px;
-  background-color: #f0f5f9;
+  background-color: #112d4e;
   box-shadow: 3px 3px 3px #52616b;
 }
 
 .weather {
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
-  background: #fff;
   border-radius: 16px;
   padding: 40px;
-  color: #0f4c75;
+  color: #dbe2ef;
 }
 
 h1 {
-  color: #0f4c75;
+  color: #dbe2ef;
   font-weight: 700;
   font-size: 38px;
   line-height: 40px;
@@ -50,6 +49,16 @@ form.search-city {
   font-size: 16px;
   height: 50px;
   line-height: 20px;
+  font-family: "Inconsolata", monospace;
+}
+
+.form-control {
+  font-family: "Inconsolata", monospace;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition-property: border-color, box-shadow;
+  transition-duration: 0.15s, 0.15s;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
 }
 
 .weather footer {
@@ -78,31 +87,26 @@ li.current-date {
   font-weight: 450;
   font-size: 18px;
   line-height: 25px;
+  color: #f9f7f7;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 li.current-forecast {
   font-family: "Karla", sans-serif;
   font-weight: 400;
   font-size: 25px;
-  color: #0f4c75;
+  color: #dbe2ef;
   padding-top: 10px;
   line-height: 27px;
 }
 
 li.detailed {
-  color: #3282b8;
+  color: #f9f7f7;
   font-size: 18px;
   font-weight: 400;
-  padding-top: 0;
+  padding-top: 5px;
   line-height: 20px;
-}
-
-i.current-icon {
-  display: block;
-  font-size: 45px;
-  padding: 5px;
-  text-align: center;
-  line-height: 35px;
 }
 
 div {
@@ -111,7 +115,7 @@ div {
 
 div.detailed {
   margin: 5px auto;
-  padding: 20px;
+  padding: 15px;
   font-size: 15px;
 }
 
@@ -135,7 +139,7 @@ span.current-temperature {
 }
 
 span.units {
-  color: #878787;
+  color: #f9f7f7;
   font-size: 20px;
   line-height: 32px;
   font-weight: 400;
@@ -149,23 +153,23 @@ div.five-day-forecast {
   margin-top: 20px;
   display: block;
   text-align: center;
-  background-color: #c9d6df;
-  border: 3px transparent #3282b8;
+  background-color: #0f4c75;
+  border: 3px transparent;
   border-radius: 30px;
   padding: 40px;
-  box-shadow: 1px 1px 1px #52616b;
   line-height: 2;
   font-family: "Inconsolata", monospace;
 }
 
 .forecast-time {
-  font-size: 20px;
-  color: #0f4c75;
+  font-size: 24px;
+  color: #dbe2ef;
+  font-weight: bolder;
 }
 
 .preview-temperature {
-  font-size: 16px;
-  color: #52575d;
+  font-size: 20px;
+  color: #dbe2ef;
 }
 
 .preview-temperature-min {
