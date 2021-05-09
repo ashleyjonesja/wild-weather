@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap"
+      rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap"
+      rel="stylesheet"
     />
     <script
-    src="https://kit.fontawesome.com/d246e28b83.js"
-    crossorigin="anonymous"
+      src="https://kit.fontawesome.com/d246e28b83.js"
+      crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
@@ -32,94 +32,105 @@
   <body>
     <div class="app weather-app-wrapper">
       <div class="container">
-      <div class="weather weather-app">
-      <form class="search-form" id="search-form">
-        <div class="row">
-          <div class="col-8">
-        <input
-          type="text"
-          class="form-control mb-2 mr-sm-2"
-          id="search-city"
-          placeholder="Enter city name"
-        />
-        </div>
-        <div class="col-2 p-0">
-        <button type="submit" class="btn btn-secondary w-70" value="Search" id = "btn-search">Search</button>
-      </div>
-      <div class="col-2 p-0">
-        <button type="submit" class="btn btn-secondary w-70" value="Search" id = "btn-current">Current</button>
-      </div>
-      </div>
-      </form>
-      <div class="weather-info">
-        <div class="row">
-          <div class ="col-4">
-          <h1 class="current-city" id="current-city"></h1>
-          <ul>
-            <li class="current-date" id="date"><span class="current-date" id="date"></span></li>
-            <li class="current-forecast" id="current-description"><span class="current-forecast" id="current-description"></span></li>
-            <li class="detailed humidity">Humidity <span id="current-humidity"></span>%
-            </li>
-            <li class="detailed wind">Wind <span id="current-wind"></span> km/h
-            </li>
-          </ul>
-        </div>
-        <div class="col-8">
-          <div class="temperature-container d-flex justify-content-end">
-          <div class="summary-weather clearfix"><img src="" alt="" id="icon" class="icon"/></div>
-          <div>
-            <span class="current-temperature" id="temperature"></span>
-            <span class="units">
-              <a href="#" id="celsius">°C</a>
-              <a href="#" id="fahrenheit">°F</a>
-            </span>
+        <div class="weather weather-app">
+          <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-8">
+                <input
+                  type="text"
+                  class="form-control mb-2 mr-sm-2"
+                  id="search-city"
+                  placeholder="Enter city name"
+                />
+              </div>
+              <div class="col-2 p-0">
+                <button
+                  type="submit"
+                  class="btn btn-secondary w-70"
+                  value="Search"
+                  id="btn-search"
+                >
+                  Search
+                </button>
+              </div>
+              <div class="col-2 p-0">
+                <button
+                  type="submit"
+                  class="btn btn-secondary w-70"
+                  value="Search"
+                  id="btn-current"
+                >
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="weather-info">
+            <div class="row">
+              <div class="col-4">
+                <h1 class="current-city" id="current-city"></h1>
+                <ul>
+                  <li class="current-date" id="date">
+                    <span class="current-date" id="date"></span>
+                  </li>
+                  <li class="current-forecast" id="current-description">
+                    <span
+                      class="current-forecast"
+                      id="current-description"
+                    ></span>
+                  </li>
+                  <li class="detailed humidity">
+                    Humidity <span id="current-humidity"></span>%
+                  </li>
+                  <li class="detailed wind">
+                    Wind <span id="current-wind"></span> km/h
+                  </li>
+                </ul>
+              </div>
+              <div class="col-8">
+                <div class="temperature-container d-flex justify-content-end">
+                  <div class="summary-weather clearfix">
+                    <img src="" alt="" id="icon" class="icon" />
+                  </div>
+                  <div>
+                    <span class="current-temperature" id="temperature"></span>
+                    <span class="units">
+                      <a href="#" id="celsius">°C</a>
+                      <a href="#" id="fahrenheit">°F</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        </div>
-        </div>
-        </div>
-      <br />
-      <div class="five-day-forecast">
-        <div class="row day-one">
-          <div class="col-4 day">Sunday</div>
-          <div class="col-4 icon"><i class="fas fa-cloud"></i></div>
-          <div class="col-2 high">11°</div>
-          <div class="col-2 low">8°</div>
-        </div>
-        <div class="row day-two">
-          <div class="col-4 day">Monday</div>
-          <div class="col-4 icon">
-            <i class="fas fa-sun"></i>
-          </div>
-          <div class="col-2 high">13°</div>
-          <div class="col-2 low">9°</div>
-        </div>
-        <div class="row day-three">
-          <div class="col-4 day">Tuesday</div>
-          <div class="col-4 icon"><i class="fas fa-cloud-sun"></i></div>
-          <div class="col-2 high">11°</div>
-          <div class="col-2 low">9°</div>
-        </div>
-        <div class="row day-four">
-          <div class="col-4 day">Wednesday</div>
-          <div class="col-4 icon"><i class="fas fa-cloud-sun"></i></div>
-          <div class="col-2 high">13°</div>
-          <div class="col-2 low">10°</div>
-        </div>
-        <div class="row day-five">
-          <div class="col-4 day">Thursday</div>
-          <div class="col-4 icon"><i class="fas fa-cloud-sun-rain"></i></div>
-          <div class="col-2 high">12°</div>
-          <div class="col-2 low">10°</div>
-        </div>
+          <br />
+          <div class="five-day-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="forecast-preview">
+                  <div class="forecast-time">Mon</div>
+                  <canvas width="38" height="38"
+                  ><img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="36"></img
+                    ></canvas>
+                    <div class="preview-temperature">
+                      <span class="preview-temperature-min">18°</span>
+                      <span class="preview-temperature-max">23°</span>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <footer>
+          <small>
+            This project was coded by Jacinda Ashley-Jones and is
+            <a href="https://github.com/ashleyjonesja/wild-weather"
+              >open-sourced on GitHub</a
+            ></small
+          >
+        </footer>
       </div>
-    </div>
-    </div>
-    <footer><small>
-      This project was coded by Jacinda Ashley-Jones and is 
-        <a href="https://github.com/ashleyjonesja/wild-weather"
-          >open-sourced on GitHub</a></small></footer>
-        </div>
     </div>
     <script src="src/script.js"></script>
   </body>

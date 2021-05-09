@@ -62,6 +62,10 @@ form.search-city {
   color: #52616b;
 }
 
+.weather-info {
+  margin: 20px;
+}
+
 li {
   font-family: "Inconsolata", monospace;
   list-style: none;
@@ -143,8 +147,9 @@ span.units {
   font-family: "Karla", sans-serif;
 }
 div.five-day-forecast {
+  margin-top: 20px;
   display: block;
-  text-align: centre;
+  text-align: center;
   background-color: #c9d6df;
   border: 3px transparent #3282b8;
   border-radius: 30px;
@@ -152,6 +157,20 @@ div.five-day-forecast {
   box-shadow: 1px 1px 1px #52616b;
   line-height: 2;
   font-family: "Inconsolata", monospace;
+}
+
+.forecast-time {
+  font-size: 16px;
+  color: #0f4c75;
+}
+
+.preview-temperature {
+  font-size: 13px;
+  color: #52575d;
+}
+
+.preview-temperature-min {
+  opacity: 0.5;
 }
 
 i.fa-cloud {
