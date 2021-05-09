@@ -111,8 +111,36 @@ div.detailed {
   font-size: 15px;
 }
 
-div.icon {
-  font-size: 25px;
+img.icon {
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  aspect-ratio: auto 52 / 52;
+  position: relative;
+  line-height: 3;
+  top: -17px;
+}
+
+span.current-temperature {
+  margin-left: 10px;
+  font-weight: 200;
+  font-size: 80px;
+  line-height: 1;
+  text-align: left;
+  font-family: "Karla", sans-serif;
+}
+
+span.units {
+  color: #212121;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+  text-align: left;
+  font-family: "Karla", sans-serif;
 }
 div.five-day-forecast {
   display: block;
