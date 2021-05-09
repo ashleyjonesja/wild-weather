@@ -34,7 +34,7 @@ let currentDate = document.querySelector("#date");
 let currentTime = new Date();
 currentDate.innerHTML = updateDate(currentTime);
 
-// Forecast Preview
+// Forecast 5 Day Preview
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
@@ -133,25 +133,8 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchCurrentLocation);
 }
-// Temperature Conversion
-function convertF(event) {
-  event.preventDefault();
-  let temperatureConversion = document.querySelector("#temperature");
-  temperatureConversion.innerHTML = 48;
-}
 
-function convertC(event) {
-  event.preventDefault();
-  let temperatureConversion = document.querySelector("#temperature");
-  temperatureConversion.innerHTML = 9;
-}
-
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", convertF);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", convertC);
-
+// Current Location Button
 let currentLocationButton = document.querySelector("#btn-current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
