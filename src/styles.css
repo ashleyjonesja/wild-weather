@@ -173,18 +173,6 @@ div.five-day-forecast {
   opacity: 0.5;
 }
 
-i.fa-cloud {
-  color: #52575d;
-}
-i.fa-sun {
-  color: #ffd460;
-}
-i.fa-cloud-sun {
-  color: #f07b3f;
-}
-i.fa-cloud-sun-rain {
-  color: #726a95;
-}
 .day {
   font-weight: bolder;
 }
